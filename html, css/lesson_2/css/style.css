@@ -41,3 +41,32 @@ h1{
 	color: grey;
 }
 
+em{
+	color: red;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.uplist{
+	
+	list-style-image: url(../images/money.png);
+	background: #2E8B57;
+	font-size: 25px;
+	width: 442px;
+}
+
+ul li ul{
+	list-style-image: url(../images/arrow.png);
+	font-size: 15px;
+	background: #FFDAB9;
+
+}
+
+.last:after{
+	content: 'new';
+	color:white;
+	background: red right;
+	font-size: 12px;
+	margin-left: 5px;
+}
