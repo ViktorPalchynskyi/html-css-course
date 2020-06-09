@@ -1,0 +1,43 @@
+body{
+	background: url(../images/2020.jpg) right top no-repeat fixed; 
+}
+
+
+ul li a:hover{
+	font-size: 22px; 
+}
+
+ul li a{
+	font-family:  fantasy;
+	color: black;
+	background: white;
+}
+
+
+h1{
+	text-align: center;
+}
+
+.art{
+	font-family: sans-serif;
+	color: #00BFFF;
+	text-decoration: none;
+	border-bottom: 2px solid #8A2BE2
+}
+
+
+.short{
+	background: #DDA0DD;
+	width: 500px;
+}
+
+
+.read:hover{
+	text-decoration: none;
+	color: #00BFFF;
+}
+
+.coment{
+	color: grey;
+}
+
