@@ -15,32 +15,36 @@
 	<fieldset>
 		<legend>Регистрация</legend>
 		<p>Ваша фамилия:</p>
-		<input type="text" name="some" size="20">
+		<input type="text" name="some" size="20" class = 'rg_inp'>
 
 		<p>Ваше имя:</p>
-		<input type="text" name="some" size="20">
+		<input type="text" name="some" size="20" class = 'rg_inp'>
 
 		<p>Ваше отчество:</p>
-		<input type="text" name="some" size="20">
+		<input type="text" name="some" size="20" class = 'rg_inp'>
 
 		<p>Загрузить фото:</p>
 		<input type="file">
 
 		<p>Адрес электронной почты:</p>
-		<input type="text" name="some" size="20">
+		<input type="text" size="20" class = 'rg_inp'>
 		 
 		<p>Пароль:</p>
-		<input type="password" name="some" size="20">
+		<input type="password" size="20" id = 'rg_pass'>
 
 		<p>Адрес сайта:</p>
-		<input type="text" name="some" size="20" value="http://">
+		<input type="text" size="20" value="http://" class = 'rg_inp'>
 
 		<p>Выберите пол:</p>
-		<label>
-			<input type="radio" name="g1">
-			М 
-			<input type="radio" name="g1">
-			Ж 
+		<label><div class="rg_chr"><input type="radio" name="g1">
+			М
+<input type="radio" name="g1">
+			Ж</div>
+			 <div class="rg_chr"><input type="radio" name="g1">
+			М
+<input type="radio" name="g1">
+			Ж</div>
+			 
 		</label>
 
 		<p>Год рождения:</p>
@@ -63,20 +67,24 @@
 		
 
 		<label>
-			<input type="checkbox" name="">
+		<div class="rg_chr"><input type="checkbox" name="">
 			Японской <br>
-			<input type="checkbox" name="">
+		</div>
+		<div class="rg_chr"><input type="checkbox" name="">
 			Русской <br>
-			<input type="checkbox" name="">
+		</div>
+		<div class="rg_chr"><input type="checkbox" name="">
 			Итальянской
+		</div>
+			
 		</label>
 	
 		<p>О себе:</p>
 		<textarea rows="20"  cols="40"></textarea>
 
 		<br>
-		<input type="submit" value="Зарегистрироваться">
-		<input type="reset" value="Очистить форму">
+		<input type="submit" value="Зарегистрироваться" id = 'rg_sub'>
+		<input type="reset" value="Очистить форму" id = 'rg_res'>
 		
 </form>
 <br>

@@ -83,3 +83,31 @@ ul li ul{
 	border: none;
 	margin: 3px 3px 3px 3px ;	
 }
+
+.rg_inp{
+	width: 160px;
+}
+#rg_pass{
+	width: 260px;
+}
+
+input[value="http://"]:focus{
+	color: blue;
+	background: yellow;
+}
+
+#rg_res:active{
+	background: #B22222;
+}
+
+#rg_sub:active{
+	background: #32CD32;
+}
+
+.rg_chr:hover{
+	border: dotted 2px red;
+}
+
+input[name='some'], .cn_inp:first-letter{
+	text-transform: capitalize;
+}
