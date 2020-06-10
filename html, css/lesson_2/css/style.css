@@ -70,3 +70,16 @@ ul li ul{
 	font-size: 12px;
 	margin-left: 5px;
 }
+
+#bg{
+	background: url(../images/tib.jpg);
+}
+
+.img{
+	border: white solid 3px;
+}
+
+.img:hover{
+	border: none;
+	margin: 3px 3px 3px 3px ;	
+}
