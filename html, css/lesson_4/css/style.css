@@ -14,3 +14,18 @@ td{
 	border: 1px solid #000;
 	padding: 10px;
 }
+
+
+#tab_reg{
+	border: 1px solid;
+	border-collapse: separate;
+}
+
+
+.tr_reg{
+	border: 1px solid;
+}
+
+#sub{
+	text-align: center;
+}
