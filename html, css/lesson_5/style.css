@@ -1,0 +1,77 @@
+body{
+	margin: 0 auto;
+
+}
+
+table, td{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+}
+
+
+
+
+#main{
+	width: 1280px;
+	height: 2466px;
+	margin: 0 auto;
+}
+
+#header{
+	height: 490px;
+	background-image: url(img/bg.png);
+}
+
+#menu{
+	height: 1735px;
+	background-color: #ffffff;
+}
+
+#footer{
+	background-color: #252725;
+}
+
+
+
+#lef_arrow{
+
+}
+
+
+
+#rt_arrow{
+	text-align: right;s 
+}
+
+#mid{
+	width: 494px;
+	vertical-align: bottom;
+}
+
+#title{
+	font-family: 'Mrs Eaves Italic';
+	font-size: 59pt;
+	color: white;
+}
+
+#nag ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	
+}
+
+#nag ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+}
+
+#nag ul li a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	position: relative;
+
+}
