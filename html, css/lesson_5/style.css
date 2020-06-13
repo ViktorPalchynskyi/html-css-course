@@ -30,23 +30,33 @@ table, td{
 
 #footer{
 	background-color: #252725;
+	height: 244px;
 }
 
 
 
 #lef_arrow{
-
+	padding: 55px;
+	margin: 0;
+	border: none;
+	
 }
 
 
 
 #rt_arrow{
-	text-align: right;s 
+	text-align: right;
+	padding: 53px;
+	margin: 0;
+	border: none;
+
 }
 
 #mid{
 	width: 494px;
-	vertical-align: bottom;
+	margin: 0px;
+	padding: 0px;
+	
 }
 
 #title{
@@ -59,13 +69,14 @@ table, td{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	float: right;
 	
 }
 
 #nag ul li{
 	display: inline-block;
-	vertical-align: top;
-	margin-right: 15px;
+	margin-right: 25px;
+	margin-bottom: 450px;
 }
 
 #nag ul li a{
