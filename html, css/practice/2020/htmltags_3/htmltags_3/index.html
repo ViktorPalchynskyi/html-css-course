@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Знакомство с  HTML тегами. Часть №3 (формы)</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<div>
+			<p>Имя</p>
+			<input placeholder="Имя"  tabindex="1" type="text" name="username">
+		</div>
+		<div>
+			<p>Пароль</p>
+			<input tabindex="2" type="password" name="userpass">
+		</div>
+		<div>
+			<p>Телефон</p>
+			<input tabindex="3" type="tel" name="userphone">
+		</div>
+		<div>
+			<p>Пол</p>
+			<input checked tabindex="4" type="radio" name="gender" value="male">Мужской
+			<br>	
+			<input tabindex="4" type="radio" name="gender" value="female">Женский
+		</div>
+		<div>
+			<p>Имущество</p>
+			<input tabindex="5" checked type="checkbox" name = "bike" value="yes">Велик
+			<br>	
+			<input tabindex="6" type="checkbox" name = "car" value="yes">Машина
+			<br>	
+			<input tabindex="7" disabled type="checkbox" name = "house" value="yes">Дом
+		</div>
+		<div>	
+			<p>Дополнительная информация</p>
+			<textarea tabindex="8" name="extrainfo" ></textarea>
+		</div>
+
+		<div>	
+			<p>Прикрепить фото</p>
+			<input tabindex="9" type="file" name="userfoto">
+		</div>
+		<div>	
+			<p>Любимый цвет</p>
+			<select tabindex="10" name="color">
+				<option value="red">Красный</option>
+				<option value="white">Белый</option>
+				<option value="black">Чёрный</option>
+				<option value="blue">Синий</option>
+			</select>
+		</div>
+		<div>
+			<p>Действия</p>
+			<button tabindex="11" type="submit">Отправить</button> 
+			<button tabindex="12" type="reset">Очистить</button> 
+		</div>
+	</form>
+</body>
+</html>
