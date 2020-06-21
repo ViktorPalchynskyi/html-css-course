@@ -36,68 +36,8 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
-
-html{
-	background: #A9A9A9;
-}
-
 body{
-	width: 1440px;
-	height: 1700px;
-	background: #e8e8e8 url() 0 0 no-repeat;
-	margin:0 auto;
-}
-
-.some {
-	visibility: hidden;
-}
-.box {
-	text-align: center;
-	background: url(../img/bg.png) 0 0 no-repeat;
-	width: 1190px;
-	height: 1064px;
-	margin:106px 108px 0 142px;
-}
-.title1 {
-	letter-spacing: 2.8px;
-	text-transform: uppercase;
-	font-family: "Arial MT";
-	color: #273d46;
-	opacity: 0.6;
-	margin:62px 0 0 0  ;
-}
-
-.text1 {
-	width: 721px;
-	margin:28px 264px 77px 205px ;
-	color: #273d46;
-	font-size: 36px;
-	line-height: 50px;
-}
-
-img{
-	border: 10px solid #fff;
-	width: 821px;
-	height: 541px;
-}
-
-.text2{
-	font-family: "Times New Roman PSMT";
-	width: 736px;
-	text-align: justify;
-	font-size: 24px;
-	color: #273d46;
-	opacity: 0.8;
-	line-height: 40px;
-	margin-top: 77px;
-	margin-left: 192px;
-	margin-bottom: 64px;
-}
-
-
-.list{
-	text-align: left;
-	margin-left: 192px;
+	padding: 30px;
 }
 
 .list li{
@@ -107,27 +47,43 @@ img{
 	line-height: 36px;
 }
 .list li:nth-child(1) {
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 	color: #273d46;
+	text-decoration: line-through;
+	
+}
+.list li:nth-child(1):hover {
+	text-decoration: none;
+	
 }
 .list li:nth-child(2) {
-	color: #80b7b3;
-	font-style: oblique;
-}
-.list li:nth-child(3) {
 	color: #273d46;
 	font-weight: 700;
 }
-.li4 {
+.list li:nth-child(2):hover {
+	background: url(../img/check_icon_red.png) left no-repeat;
+	color: red;
+	font-weight: 400;
+}
+.list li:nth-child(3) {
 	color: #273d46;
-	text-decoration: line-through;
-	opacity: 0.3;
+	font-style: italic;
+}
+.list li:nth-child(3):hover {
+	font-style: normal;
+}
+.list li:nth-child(4) {
+	color: #273d46;
+	text-transform: uppercase;
+}
+.list li:nth-child(4):hover {
+	text-transform: none;
 }
 
 
+
 .btn {
+	margin:50px 0 10px 0 ;
 	display: block;
-	margin:59px 0 0 192px;
 	width: 199px;
 	background: #80b7b3 url(../img/right_arrow.png) 162px 13px no-repeat;
 	border-radius: 20px;
@@ -137,4 +93,23 @@ img{
 	color: #ffffff;
 	font-size: 14px;
 	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+}
+
+.btn:hover{
+	background-color: #3a5856;
+}
+
+.btn:active{
+	background-color: #818181;
+}
+
+
+.focus_text{
+	width: 292px;
+	height: 50px;
+	border: 1px solid #b0b0b0;
+}
+
+.focus_text:focus{
+	box-shadow: 0 0 10px #7fbed5;
 }
