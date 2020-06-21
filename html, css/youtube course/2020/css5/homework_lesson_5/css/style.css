@@ -36,42 +36,109 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
+
+html{
+	background: #A9A9A9;
+}
+
 body{
-	margin: 0 0 0 50px ;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: 1440px;
+	height: 1700px;
+	background: #e8e8e8 url() 0 0 no-repeat;
+	margin:0 auto;
 }
 
-div{
-	margin:35px 0;
-	line-height: 25px;
-	
+.some {
+	visibility: hidden;
+}
+.box {
+	text-align: center;
+	background: url(../img/bg.png) 0 0 no-repeat;
+	width: 1190px;
+	height: 1064px;
+	margin:106px 108px 0 142px;
+}
+.title1 {
+	letter-spacing: 2.8px;
+	text-transform: uppercase;
+	font-family: "Arial MT";
+	color: #273d46;
+	opacity: 0.6;
+	margin:62px 0 0 0  ;
 }
 
-p{
-	display: inline;
+.text1 {
+	width: 721px;
+	margin:28px 264px 77px 205px ;
+	color: #273d46;
+	font-size: 36px;
+	line-height: 50px;
 }
 
-.box1 {
-	width: 611px;
-	height: 64px;
+img{
+	border: 10px solid #fff;
+	width: 821px;
+	height: 541px;
 }
-.sp1 {
-	display: block;
-	
+
+.text2{
+	font-family: "Times New Roman PSMT";
+	width: 736px;
+	text-align: justify;
+	font-size: 24px;
+	color: #273d46;
+	opacity: 0.8;
+	line-height: 40px;
+	margin-top: 77px;
+	margin-left: 192px;
+	margin-bottom: 64px;
 }
-.box2 {
-	padding: 0 0 45px 0;
+
+
+.list{
+	text-align: left;
+	margin-left: 192px;
 }
-.box3 {
-	margin:0 40px 0 0;
-	display: inline;
+
+.list li{
+	background: url(../img/check_icon.png) left no-repeat;
+	font-size: 20px;
+	padding: 0 0 0 30px;
+	line-height: 36px;
 }
-.sp2 {
-	margin:0 40px 0 0;
-	padding: 0 40px;
+.li1 {
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	color: #273d46;
 }
-.sp3 {
-	display: block;
-	margin:35px 0;
-	padding: 45px 0;
+.li2 {
+	color: #80b7b3;
+	font-style: oblique;
+}
+.li3 {
+	color: #273d46;
+	font-weight: 700;
+}
+.li4 {
+	color: #273d46;
+	text-decoration: line-through;
+	opacity: 0.3;
+}
+
+
+.botton {
+	margin:59px 0 0 192px;
+	width: 199px;
+	background: #80b7b3 url(../img/right_arrow.png) 162px 13px no-repeat;
+	border-radius: 20px;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	color: #ffffff;
+	font-size: 14px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+}
+.arrow {
+	width: 21px;
+	height: 14px;
+	opacity: 0.8;
 }
