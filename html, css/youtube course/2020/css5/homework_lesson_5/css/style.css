@@ -101,11 +101,15 @@ img{
 }
 
 .list li{
-	background: url(../img/check_icon.png) left no-repeat;
 	font-size: 20px;
-	padding: 0 0 0 30px;
 	line-height: 36px;
 }
+
+.list li:before{
+	content: url(../img/check_icon.png);
+	margin:0 10px 0 0;
+}
+
 .list li:nth-child(1) {
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 	color: #273d46;
@@ -118,7 +122,7 @@ img{
 	color: #273d46;
 	font-weight: 700;
 }
-.li4 {
+.list li:nth-child(4) {
 	color: #273d46;
 	text-decoration: line-through;
 	opacity: 0.3;
@@ -129,7 +133,8 @@ img{
 	display: block;
 	margin:59px 0 0 192px;
 	width: 199px;
-	background: #80b7b3 url(../img/right_arrow.png) 162px 13px no-repeat;
+	height: 44px;
+	background: #80b7b3;
 	border-radius: 20px;
 	line-height: 40px;
 	text-transform: uppercase;
@@ -137,4 +142,8 @@ img{
 	color: #ffffff;
 	font-size: 14px;
 	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+}
+
+.btn:after{
+	content: url(../img/right_arrow.png);
 }
