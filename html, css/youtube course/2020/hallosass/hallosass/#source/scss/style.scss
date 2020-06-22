@@ -1,16 +1,17 @@
 // Файл обнуляющих стилей
-@import "nullstyle.scss";
+@import "nullstyle";
 
-
+// Переменные для блока
 $fz:100px;
 $color_1:#fff;
 $color_2:#000;
 
+// Шаблон №1
 %tplborber{
 	border-bottom: 5px dashed red;
 }
 
-
+//Миксин
 @mixin fontz($f, $c){
 	font-size: $f;
 	color:$c;
