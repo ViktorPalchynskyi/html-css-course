@@ -1,0 +1,76 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+
+
+
+body{
+	height: 100%;
+	overflow: hidden;
+	min-height: 100%;
+	padding: 50px;
+}
+
+
+
+.block {
+	
+}
+.block__row {
+	display: flex;
+	// justify-content:center;
+	// align-items: center;
+	// flex-wrap: wrap;
+	border: 20px solid #ece89d;
+	margin: 0 0 20px 0px;
+	height: 1000px;
+	flex-direction: column;
+	// align-items: flex-end; 
+	// justify-content: space-between;
+}
+.block__column {
+	border: 20px solid #5e5373;
+
+
+	/*
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 500px;
+	*/
+
+	flex: 0 1 auto;
+
+
+}
+
+.block__column_1{
+	// align-self: flex-end; 
+	// order: 3;
+}
+.block__column_2{
+	// order: 2;
+	flex:1 1 auto;
+}
+.block__column_3{
+	// align-self: flex-start; 
+	// order: 1;
+}
+
+
+
+
+.block__item {
+	text-align: center;
+	background-color: #18b5a4;
+	padding: 50px;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 700;
+}
+
+// .top{
+// 	height: 300px;
+// 	width: 300px;
+
+// }
