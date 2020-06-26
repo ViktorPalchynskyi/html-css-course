@@ -1,0 +1,23 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+
+
+
+.block {
+	&__row {
+		border: 1px solid #ece89d;
+		padding: 30px;
+	}
+	&__element {
+	}
+	&__element_1 {
+	}
+	&__element_2 {
+	}
+	&__element_3 {
+	}
+	&__element_4 {
+	}
+}
