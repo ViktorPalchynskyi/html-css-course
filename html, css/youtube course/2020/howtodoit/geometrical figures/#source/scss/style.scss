@@ -1,0 +1,82 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+
+
+.wrapper {}
+.block {
+	padding: 50px;
+	max-width: 1170px;
+	margin:0px auto;
+}
+.block__item {
+	margin:0 0 30px 0;
+}
+.square {
+	height: 150px;
+	width: 150px;
+	background-color:green;
+}
+.rectangle {
+	height: 150px;
+	width: 300px;
+	background-color:green;
+}
+.circle {
+	height: 150px;
+	width: 150px;
+	background-color:green;
+	border-radius: 50%;
+}
+.oval {
+	height: 150px;
+	width: 300px;
+	background-color:green;
+	border-radius: 50%;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+	&:hover{
+	border-bottom: 100px solid red;
+	};
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid green;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-right: 100px solid green;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 100px solid green;
+}
+.parallelogram {
+	width: 200px;
+	height: 100px;
+	background-color: green;
+	transform: skew(15deg);
+}
+.trapezoid {
+	width: 200px;
+	border-bottom: 100px solid green;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+}
+
