@@ -1,0 +1,39 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+.block{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.block__btn {
+	margin: 300px 0 0 0 ;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 60px;
+	padding: 0px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	border-radius: 10px;
+	top:0;
+	position: relative;
+
+}
+
+.block__btn_1 {
+	color: #fff;
+	background-color: #5e4373;
+	box-shadow: 0 5px 0px #3c354a;
+	transition-duration: 0.5s, 100ms, 100ms;
+	transition-property: background-color, top, box-shadow;
+	transition-delay: 0s, 0.5s, 0.5s;
+	&:hover{
+		top: 2px;
+		box-shadow: 0 3px 0 #3c354a;
+		background-color: #18b5a4;
+	}
+}
