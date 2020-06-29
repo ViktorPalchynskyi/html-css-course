@@ -1,0 +1,54 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+
+
+
+body{
+	height: 100%;
+	background-color: #333;
+}
+
+.wrapper {}
+.content {
+	padding: 50px;
+	&:hover .content__circle{
+	animation-play-state: paused;
+	}
+}
+.content__circle {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+	
+	// animation-name: white-circle;
+	// animation-duration: 5s;
+	// animation-timing-function: linear;
+	// animation-iteration-count: 3;
+	// animation-direction: alternate;
+	// animation-delay: 2s;
+	// animation-fill-mode: forwards;
+
+	animation: white-circle 2s linear 3 alternate 2s forwards; 
+
+}
+
+
+@keyframes white-circle{
+	0%{
+	left: 0;
+	}
+	50%{
+		background-color: #f9f;
+		border-radius: 0;
+
+	}
+	100%{
+	left: 500px;
+
+	}
+}
