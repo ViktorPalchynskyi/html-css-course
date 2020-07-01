@@ -4,20 +4,60 @@
 
 
 
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
-.block {
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1 1 auto;
+}
+.conteiner {
+	max-width: 1180px;
+	margin: 0 auto;
+
+}
+.hi {
+	background-color: #445162;
+	padding: 50px 0;
 	&__row {
-		border: 1px solid #ece89d;
-		padding: 30px;
+	display: flex;
+	justify-content: space-between;
 	}
-	&__element {
+	&__body {
+	color: #fff;
+	padding: 0 30px 0 0;
 	}
-	&__element_1 {
+	&__title {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 60px;
+	margin: 0 0 40px 0;
 	}
-	&__element_2 {
+	&__list {
+
+	& li{
+	list-style: none;
+	background:url('../img/icons/icon.png')0 1px no-repeat;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	line-height: 22px;
+	padding: 0 0 0 36px;
+	margin: 0 0 15px 0;
+
 	}
-	&__element_3 {
+	& li:last-child{
+	margin: 0;
+}
+
 	}
-	&__element_4 {
+	&__image {
+
 	}
 }
+
