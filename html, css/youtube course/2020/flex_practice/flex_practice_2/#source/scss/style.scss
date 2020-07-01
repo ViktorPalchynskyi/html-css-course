@@ -212,3 +212,21 @@ body{
 
 	}
 }
+
+
+
+.footer {
+	background-color: #f5f5f5;
+
+	&__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	}
+	&__text {
+color: #445162;
+font-size: 12px;
+letter-spacing: 0.3px;
+	}
+}
