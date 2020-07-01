@@ -98,3 +98,49 @@ body{
 	}
 	}
 }
+
+
+.columns {
+	background-color: #f5f5f5;
+	padding:50px 0 20px 0;
+	&__title {
+	text-align: center;
+	margin: 0 0 30px 0;
+	}
+	&__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -8px;
+
+	}
+	&__column {
+	padding: 0 8px;
+	flex:0 1 50%;
+	margin: 0 0 30px 0;
+	}
+	&__item {
+	}
+}
+.item {
+	&__row {
+	display: flex;
+	}
+	&__image {
+	flex:0 0 200px;
+	}
+	&__body {
+	flex:1 1 auto;
+	padding: 0 0 0 15px;
+	}
+	&__title {
+	color: #445161;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 0 0 15px 0;
+	}
+	&__text {
+	color: #333333;
+	font-size: 16px;
+	line-height: 24px;
+	}
+}

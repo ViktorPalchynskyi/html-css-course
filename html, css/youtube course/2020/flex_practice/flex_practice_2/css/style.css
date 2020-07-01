@@ -164,3 +164,51 @@ body {
 .what__image img {
   max-width: 100%;
 }
+
+.columns {
+  background-color: #f5f5f5;
+  padding: 50px 0 20px 0;
+}
+
+.columns__title {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.columns__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.columns__column {
+  padding: 0 8px;
+  flex: 0 1 50%;
+  margin: 0 0 30px 0;
+}
+
+.item__row {
+  display: flex;
+}
+
+.item__image {
+  flex: 0 0 200px;
+}
+
+.item__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 15px;
+}
+
+.item__title {
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 15px 0;
+}
+
+.item__text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
