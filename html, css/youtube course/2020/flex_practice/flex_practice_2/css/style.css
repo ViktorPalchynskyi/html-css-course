@@ -87,7 +87,7 @@ body {
   flex: 1 1 auto;
 }
 
-.conteiner {
+.container {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -125,4 +125,42 @@ body {
 
 .hi__list li:last-child {
   margin: 0;
+}
+
+.title {
+  color: #445161;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.what {
+  padding: 50px 0;
+}
+
+.what__row {
+  display: flex;
+}
+
+.what__body {
+  padding: 0 0 0 38px;
+  flex: 1 1 auto;
+}
+
+.what__title {
+  margin: 0 0 33px 0;
+}
+
+.what__text p {
+  margin: 0 0 25px 0;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.what__image {
+  flex: 0 0 430px;
+}
+
+.what__image img {
+  max-width: 100%;
 }

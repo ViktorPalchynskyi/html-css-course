@@ -18,7 +18,7 @@ body{
 .content {
 	flex: 1 1 auto;
 }
-.conteiner {
+.container {
 	max-width: 1180px;
 	margin: 0 auto;
 
@@ -61,3 +61,40 @@ body{
 	}
 }
 
+
+.title {
+	color: #445161;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+
+
+
+.what {
+	padding: 50px 0;
+	&__row {
+	display: flex;
+	}
+	&__body {
+	padding: 0 0 0 38px;
+	flex:1 1 auto;
+	}
+	&__title {
+	margin: 0 0 33px 0;
+	}
+	&__text {
+	& p{
+	margin: 0 0 25px 0;
+	color: #333333;
+	font-size: 16px;
+	line-height: 24px;
+	}
+	}
+	&__image {
+	flex:0 0 430px;
+	& img{
+	max-width: 100%;
+	}
+	}
+}
