@@ -1,0 +1,110 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+html,body{
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 50px 15px;
+}
+.text {
+	margin: 0px 0px 80px 0px;
+	&__title {
+	}
+	&__value {
+	& p{
+	margin: 0px 0px 20px 0px;
+	}
+	}
+	&__img {
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+	& img{
+	max-width: 100%;
+	}
+	}
+
+}
+.title {
+	margin: 0px 0px 20px 0px;
+	font-size: 30px;
+}
+.cards {
+	margin: 0px 0px 70px 0px;
+	&__title {
+	}
+	&__row {
+	margin: 0px -15px 70px -15px;
+	display: flex;
+
+	}
+	&__column {
+	flex:0 1 33.333%;
+	padding: 0px 15px;
+	}
+	&__item {
+	}
+	&__img {
+	padding: 0 0 58% 0;
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	position: relative;
+	& img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top:0;
+	left:0;
+	}
+	}
+	&__body {
+	}
+}
+.items {
+	&__title {
+	}
+	&__item {
+	display: flex;
+	margin: 0px 0px 30px 0px;
+	}
+	&__img {
+	flex: 0 0 33.333%;
+	position: relative;
+	min-height: 150px;
+	& img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left:0;
+	}
+	}
+	&__body {
+	flex: 1 1 auto;
+	padding: 0px 0px 0px 30px;
+	}
+	&__lable {
+	font-size: 20px;
+	font-weight: 700;
+	display: inline-block;
+	margin: 0px 0px 20px 0px;
+	}
+	&__text {
+	}
+}
