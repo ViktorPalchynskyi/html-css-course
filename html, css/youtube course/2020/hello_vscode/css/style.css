@@ -1,0 +1,19 @@
+header {
+  background-color: seagreen;
+}
+
+html,
+body {
+  color: white;
+  background-color: #333;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.block__item {
+  color: coral;
+}
+
+.block__item:nth-child(1) {
+  color: seagreen;
+}

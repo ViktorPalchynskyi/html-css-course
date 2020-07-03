@@ -1,0 +1,18 @@
+@import "_header";
+
+html,
+body {
+   color: white;
+   background-color: #333;
+   font-size: 20px;
+   margin: 50px;
+}
+
+.block {
+   &__item {
+      color: coral;
+   }
+   &__item:nth-child(1) {
+      color: seagreen;
+   }
+}
