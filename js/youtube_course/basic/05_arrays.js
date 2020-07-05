@@ -1,6 +1,6 @@
-const cars = ['Mazda', 'Ford', 'BMW', 'Honda']
+// const cars = ['Mazda', 'Ford', 'BMW', 'Honda']
 
-const fib = [1, 1, 2, 5, 8, 13]
+// const fib = [1, 1, 2, 5, 8, 13]
 
 // console.log(cars)
 
@@ -68,7 +68,7 @@ const fib = [1, 1, 2, 5, 8, 13]
 // console.log(upperCaseCars)
 
 
-const pow2 = num => num ** 2
+// const pow2 = num => num ** 2
 // // const sqrt = num => Math.sqrt(num)
 
 // const toPow = fib.map(pow2)
@@ -88,19 +88,19 @@ const pow2 = num => num ** 2
 
 
 
-const people = [
-   { name: 'Viktor', budget: 4200 },
-   { name: 'Oleg', budget: 4600 },
-   { name: 'Jenya', budget: 1600 },
-   { name: 'Katya', budget: 5200 }
+// const people = [
+//    { name: 'Viktor', budget: 4200 },
+//    { name: 'Oleg', budget: 4600 },
+//    { name: 'Jenya', budget: 1600 },
+//    { name: 'Katya', budget: 5200 }
 
-]
+// ]
 
-const allBudget = people
-   .filter(person => person.budget > 2000)
-   .reduce((acc, person) => {
-      acc += person.budget
-      return acc
-   }, 0)
+// const allBudget = people
+//    .filter(person => person.budget > 2000)
+//    .reduce((acc, person) => {
+//       acc += person.budget
+//       return acc
+//    }, 0)
 
-console.log(allBudget)
+// console.log(allBudget)
