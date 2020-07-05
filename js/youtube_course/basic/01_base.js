@@ -79,7 +79,7 @@
 // }
 
 
-const isReady = true
+// const isReady = true
 
 // Тернарное выражение
 // isReady ? console.log('Ready') : console.log('No ready')
@@ -156,20 +156,20 @@ const isReady = true
 
 // 11 Объекты
 
-const person = {
-   firtsName: 'Viktor',
-   lastName: 'Palchynskyi',
-   year: 1998,
-   languages: ['Ru', 'Ua', 'En', 'De', 'Jp'],
-   hasWife: false,
-   greet: function () {
-      console.log('Greeting!')
-   }
-}
+// const person = {
+//    firtsName: 'Viktor',
+//    lastName: 'Palchynskyi',
+//    year: 1998,
+//    languages: ['Ru', 'Ua', 'En', 'De', 'Jp'],
+//    hasWife: false,
+//    greet: function () {
+//       console.log('Greeting!')
+//    }
+// }
 
-console.log(person.firtsName)
-const key = 'languages'
-console.log(person[key])
-person.hasWife = true
-console.log(person['hasWife'])
-person.greet()
+// console.log(person.firtsName)
+// const key = 'languages'
+// console.log(person[key])
+// person.hasWife = true
+// console.log(person['hasWife'])
+// person.greet()
