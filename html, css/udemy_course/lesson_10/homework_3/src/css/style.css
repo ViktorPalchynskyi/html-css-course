@@ -1,0 +1,28 @@
+body {
+   background-color: rgba(240, 230, 140, 0.3);
+}
+
+h1 {
+   color: rgb(172, 34, 0);
+   text-align: center;
+   font-size: 16px;
+}
+
+h2 {
+   color: red;
+   text-align: center;
+   font-size: 16px;
+}
+
+h3 {
+   font-weight: 300;
+   font-size: 14px;
+}
+
+span {
+   font-style: italic;
+}
+
+p {
+   font-size: 12px;
+}
