@@ -1,0 +1,21 @@
+* {
+   box-sizing: border-box;
+}
+
+.my-flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   /* flex-direction: column; */
+   justify-content: space-around;
+   align-items: center;
+   height: 450px;
+   background-color: #333;
+}
+.my-flex-block {
+   margin: 0px 50px;
+   width: 150px;
+   height: 150px;
+   background-color: red;
+   text-align: center;
+   color: #fff;
+}
