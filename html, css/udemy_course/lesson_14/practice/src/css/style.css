@@ -40,6 +40,7 @@ h2 {
    border: 3px solid black;
    margin: 20px;
    z-index: 5;
+   vertical-align: middle;
 }
 
 a {
@@ -52,6 +53,7 @@ img {
    width: 200px;
    margin: 0 auto;
    display: block;
+   /* float: left; */
 }
 
 nav {
@@ -66,9 +68,10 @@ nav {
 }
 
 .red {
-   position: absolute;
+   /* position: absolute;
    left: 160px;
-   bottom: 20px;
+   bottom: 20px; */
+   height: 100px;
    background-color: red;
-   z-index: -1;
+   /* z-index: -1; */
 }
