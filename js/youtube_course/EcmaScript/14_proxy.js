@@ -16,7 +16,6 @@ const form = {
    login: 'tester',
    password: '12345'
 }
-
 const formProxy = new Proxy(form, validator)
 
 // console.log(formProxy.login)
