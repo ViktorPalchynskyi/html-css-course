@@ -67,8 +67,7 @@ function showMyDB(db) {
 
 function writeYourGenres(db) {
    for (let i = 0; i < 3; i++) {
-      const gener = prompt(`Ваш любимый жанр под номером ${i+1}`, '');
-      db.genres[i] = gener;
+      db.genres[i] = prompt(`Ваш любимый жанр под номером ${i+1}`, '');
    }
 }
 
