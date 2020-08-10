@@ -1,0 +1,20 @@
+.btn-block {
+   background-color: #ccc;
+   height: 70px;
+}
+
+button {
+   height: 50px;
+   width: 100px;
+   background-color: yellow;
+   border: none;
+   transition: 0.3s;
+}
+
+.blue {
+   background-color: deepskyblue;
+}
+
+.red {
+   background-color: tomato;
+}
