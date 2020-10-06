@@ -1,0 +1,4 @@
+/node_modules
+*.php
+*.json
+webpack.config.js
