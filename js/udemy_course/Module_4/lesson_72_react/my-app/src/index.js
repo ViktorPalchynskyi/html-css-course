@@ -1,47 +1,53 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
 
-
-
-
-const Header = () => { 
-  return <h2>Hello world!</h2>
-}
-const Field = () => {
-  const holder = 'Enter here';
-  const styledField = { 
-    width: '300px'
+class WhoAmI extends Component{ 
+  constructor (props) { 
+    super(props);
+    this.state = {
+      years: 25,
+      nationality: 'ua'
+    };
+    // this.nextYear = this.nextYear.bind(this);
+    this.nextYear = () => { 
+        this.setState(state => ({
+          years: ++state.years
+        }));
+    };
   }
-  return <input 
-            style={styledField}
-            type= "text" 
-            placeholder= {holder} 
-            autoComplete="" 
-            className="first"
-            htmlFor
-  />
+  // nextYear() { 
+  //   this.setState(state => ({
+  //     years: ++state.years
+  //   }));
+  // }
+  render() { 
+    const {name, surname, link} = this.props;
+    const {years} = this.state;
+    return (
+      <>
+        <h1>My name is {name}, surname - {surname}, years = {years}</h1>
+        <button onClick={this.nextYear}>++</button>
+        <a href={link}>My profile</a>
+      </>
+    )
+  }
 }
-const Btn = () => {
-  const text = 'Log in';
-  const logged = false;
 
-  return <button>{logged ? "Enter": text}</button>
-}
 
-const App = () => {
-  return (
-    <div>
-      <Header/>
-      <Field/>
-      <Btn/>
-    </div>
+
+const All =() => {
+  return(
+    <>
+      <WhoAmI name="John" surname="Black" link="https://www.youtube.com/"/>
+      <WhoAmI name="Ivan" surname="Petrikov" link="https://www.youtube.com/"/>
+      <WhoAmI name="Viktor" surname="Sputnik" link="https://www.youtube.com/"/>
+    </>
   )
 }
 
 ReactDOM.render(
-  <App/>,
+  <All/>,
   document.getElementById('root')
 );
 
