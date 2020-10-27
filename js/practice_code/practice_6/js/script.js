@@ -36,16 +36,16 @@ function createPost(post) {
   });
 }
 
-// createPost({ title: 'Posts Three', body: 'This is post three' })
-//   .then(getPosts)
-//   .catch(err => console.log(err));    
+createPost({ title: 'Posts Three', body: 'This is post three' })
+  .then(getPosts)
+  .catch(err => console.log(err));    
 
-// const promise1 = Promise.resolve('Hello world');
-// const promise2 = 12;
-// const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 2 * 1000, 'Goodbye'));
+const promise1 = Promise.resolve('Hello world');
+const promise2 = 12;
+const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 2 * 1000, 'Goodbye'));
 
-// const promise4 = fetch('https://jsonplaceholder.typicode.com/users')
-//   .then(res => res.json());
+const promise4 = fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json());
 
 async function init() {
   await createPost({ title: 'Posts Three', body: 'This is post three' });
@@ -55,6 +55,20 @@ async function init() {
 
 init();
 
-// Promise.all([promise1, promise2, promise3, promise4])
-//   .then((values) => console.log(values)); 
 
+
+Promise.all([promise1, promise2, promise3, promise4])
+  .then((values) => console.log(values)); 
+
+
+
+async function fetchUsers() { 
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+
+  const data = await res.json();
+
+  console.log(data);
+
+}
+
+fetchUsers();

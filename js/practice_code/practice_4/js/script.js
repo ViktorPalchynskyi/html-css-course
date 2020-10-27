@@ -54,7 +54,7 @@ let user = await response.json();
 
   }
 
-  let loginArr = ['ViktorPalchynskyi', 'sir13tommy'];
+  let loginArr = ['ViktorPalchynskyi','nuulone', 'sir13tommy'];
 
   let res = getUsers(loginArr);
 
