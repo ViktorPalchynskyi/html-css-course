@@ -1,13 +1,7 @@
 function findOutlier(integers){
   let evenNum = 0;
   let oddNum = 0;
-  for (let num of integers) { 
-    if(num % 2 === 0){
-      evenNum++;
-    } else if(num % 2 !== 0){ 
-      oddNum++;
-    }
-  }
+  for (let num of integers) { num % 2 === 0 ?  evenNum++ : oddNum++}
   return +(integers.filter(num=> (evenNum < oddNum ? num % 2 === 0: num % 2 !== 0)));
 }
 
