@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form__set {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px 30px 35px;
+  border: none;
+}
+
+.form__header {
+  color: #5363db;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.form__set>input {
+  color: #000;
+  margin-top: 17px;
+  background-color: #f2f2f2;
+  border: none;
+  display: block;
+  padding: 18px 112px 18px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 50%;
+  outline: 0;
+}
+
+.form__set select {
+  opacity: 0.7;
+}
+
+.form__submit {
+  display: block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  background-color: #5b6ceb;
+  border: none;
+  margin: 31px 0px 0px auto;
+  border-radius: 8px;
+  padding: 17px 64px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.form__submit:hover {
+  background-color: rgb(161, 20, 255);
+}
+
+.GoodCard { 
+  background-color: coral;
+}
