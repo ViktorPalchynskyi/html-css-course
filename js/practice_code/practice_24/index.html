@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Express</title>
+</head>
+<body>
+   
+   <input type='text' id='upload' value='/upload'/><br/><input type='file' id='file' />
+   <a href='#' id='url'></a>
+
+<script>
+    file.onchange = async () => {
+        url.innerHTML = url.href = "/" + await (await fetch(upload.value, {
+            method: "POST",
+            body: file.files[0]
+        })).text()
+    }
+</script>
+</body>
+</html>
