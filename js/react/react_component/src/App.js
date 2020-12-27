@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {Component} from 'react';
+import React, {Component} from 'react';
 import Car from './Car/Car';
-import { render } from '@testing-library/react';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
+import Counter from './Counter/Counter';
+
+export const ClickedContext = React.createContext(false);
 
 class App extends Component {
 
@@ -10,9 +13,10 @@ class App extends Component {
     super(props);
 
     this.state = { 
+      clicked: false,
       cars: [
-        // {name:'Ford', year:2018},
-        // {name:'Audi', year:2016},
+        {name:'Ford', year:2018},
+        {name:'Audi', year:2016},
         {name:'Mazda', year:2020}
       ],
       pageTitle: 'Reac components',
@@ -61,8 +65,18 @@ class App extends Component {
       <div style={divStyle}>
         <h1>{this.state.pageTitle}</h1>
         <h2>{this.props.title}</h2>
+        <ClickedContext.Provider value={this.state.clicked}>
+          <Counter/>
+        </ClickedContext.Provider>
+        <hr/>
+        <button 
+        style={{marginTop: 20, backgroundColor:'coral', padding:'10px 20px'}}
+        onClick={this.toggleCarsHandler}
+        >Toggle cars</button>
 
-        <button onClick={this.toggleCarsHandler}>Toggle cars</button>
+        <button 
+        style={{marginTop: 20, backgroundColor:'deepskyblue', padding:'10px 20px'}}
+        onClick={()=> this.setState({clicked: true})}>Changed clicked</button>
 
         <div style={{
           width: 400,
@@ -71,13 +85,16 @@ class App extends Component {
         }}>
         {this.state.showCars 
           ? this.state.cars.map(({name, year}, i) => (
-            <Car 
-            key = {i}
-            year = {year} 
-            onDelete = {this.deleteHandler.bind(this, i)}
-            name = {name} 
-            onChangeName={event => this.onChangeName(event.target.value, i)}
-            />)) 
+            <ErrorBoundary key = {i}>
+              <Car 
+                year = {year} 
+                name = {name}
+                index={i} 
+                onDelete = {this.deleteHandler.bind(this, i)}
+                onChangeName={event => this.onChangeName(event.target.value, i)}
+                />
+            </ErrorBoundary>
+            )) 
           : null  }
         </div>
       </div>
