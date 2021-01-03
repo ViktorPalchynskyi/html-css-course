@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Member from './Member/Member';
 import CountryList from './CountryList/CountryList';
