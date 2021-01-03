@@ -1,9 +1,10 @@
 .Color{ 
-   margin: 0px auto;
+   margin: 20px auto;
    width: 50%;
    position: relative;
    display: block;
-   background-color: #ccc;
+   border: 1.5px solid #000;
+   /* background-color: #ccc; */
 }
 
 .Color button{ 
