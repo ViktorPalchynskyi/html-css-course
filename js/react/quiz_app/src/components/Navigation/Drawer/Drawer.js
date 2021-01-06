@@ -1,20 +1,32 @@
-import { render } from '@testing-library/react';
 import React, {Component} from 'react';
 import classees from './Drawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
-
+import {NavLink} from 'react-router-dom'; 
 
 const links = [
-   1,2,3
-]
+   {to: '/', label:'Спосок', exact: true},
+   {to: '/auth', label:'Авторизация', exact: true},
+   {to: '/quiz-creator', label:'Создать тест', exact: true}
+];
 
 export default class Drawer extends Component {
    
+   clickHandler = () => {
+      this.props.onClose()
+   }
+
    renderLinks() { 
       return links.map((link, index) => { 
          return(
             <li key={index}>
-               <a>Link {link}</a>
+               <NavLink 
+               to={link.to} 
+               exact={link.exact}
+               activeClassName={classees.active}
+               onClick={this.clickHandler}
+               >
+                  {link.label}
+               </NavLink>
             </li>
          )
       });
