@@ -4,8 +4,9 @@ import Button from '../../components/UI/Button/Button';
 import Input from '../../components/UI/Input/Input';
 import is from 'is_js';
 import axios from 'axios';
-
-export default class Auth extends Component {
+import { connect } from 'react-redux';
+import {auth} from '../../redux/actions/authActionCreator';
+class Auth extends Component {
 
   state = {
     isFormValid: false,
@@ -38,10 +39,19 @@ export default class Auth extends Component {
   }
 
   loginHandler = () => {
-
+    this.props.auth(
+      this.state.formControls.email.value,
+      this.state.formControls.password.value,
+      true
+    )
   }
 
-  registerHandler = async () => {
+  registerHandler = () => {
+    this.props.auth(
+      this.state.formControls.email.value,
+      this.state.formControls.password.value,
+      false
+    )
     axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]')
   }
 
@@ -141,4 +151,12 @@ export default class Auth extends Component {
       </div>
     )
   }
- }
+}
+
+function mapDispatchToProps(dispatch) { 
+  return {
+    auth: (email, password, isLogin) => dispatch(auth(email, password, isLogin))
+  }
+}
+
+export default connect(null,mapDispatchToProps)(Auth);
