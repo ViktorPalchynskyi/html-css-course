@@ -15,10 +15,17 @@
          {{/if}}
 
          {{#if isAdd}}
-         <li class="active"><a href="/add">Добавитьс</a>
+         <li class="active"><a href="/add">Добавить</a>
          </li>
          {{else}}
          <li><a href="/add">Добавить курс</a></li>
+         {{/if}}
+
+         {{#if isCard}}
+         <li class="active"><a href="/card">Корзина</a>
+         </li>
+         {{else}}
+         <li><a href="/card">Корзина</a></li>
          {{/if}}
       </ul>
    </div>
