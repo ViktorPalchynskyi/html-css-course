@@ -6,7 +6,7 @@ const app = express();
 // Connect DB
 connectDB();
 
-// Init Meddleware 
+// Init Meddleware for body parser
 app.use(express.json({extended: false}));
 
 app.get('/', (req, res)=> res.send('API Running'));
