@@ -1,21 +1,30 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
+import {login} from '../../actions/auth';
 
-const Login = (props)=> {
+
+const Login = ({login ,isAuthenicated})=> {
 
    const [formDate, setFormData] = useState({
       email: '',
       password: '',
    });
 
-   const {name, email, password, password2} = formDate;
+   const { email, password} = formDate;
 
    const onChange = e => setFormData({...formDate, [e.target.name]: e.target.value});
 
    const onSubmit = async e => { 
       e.preventDefault();
-      console.log('SUCCESS');
+      login(email, password);
    };
+
+   // Redirect if logged in
+   if(isAuthenicated) { 
+     return <Redirect to="/dashboard"/>
+   }
 
    return (
       <>
@@ -51,4 +60,13 @@ const Login = (props)=> {
    );
 }
 
-export default Login;
+Login.propTypes = { 
+  login: PropTypes.func.isRequired,
+  isAuthenicated: PropTypes.bool
+}
+
+const mapStateToProps = state => ({ 
+  isAuthenicated: state.auth.isAuthenicated
+});
+
+export default connect(mapStateToProps, {login})(Login);
