@@ -12,4 +12,7 @@ export const constants = {
    LOGIN_FAIL: 'LOGIN_FAIL',
 
    LOGOUT: 'LOGOUT',
+   
+   GET_PROFILE: 'GET_PROFILE',
+   PROFILE_ERROR: 'PROFILE_ERROR',
 };
