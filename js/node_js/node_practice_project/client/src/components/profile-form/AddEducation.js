@@ -57,7 +57,7 @@ const AddEducation = ({addEducation, history}) => {
                setFormData({...formData, current: !current});
                toggleDisabled(!toDateDisabled)
             }} name="current" 
-            />{' '} Current Job</p>
+            />{' '} Current</p>
          </div>
          <div className="form-group">
             <h4>To Date</h4>

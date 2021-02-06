@@ -18,4 +18,6 @@ export const constants = {
    PROFILE_ERROR: 'PROFILE_ERROR',
 
    UPDATE_PROFILE: 'UPDATE_PROFILE',
+
+      ACCOUNT_DELETED: 'ACCOUNT_DELETED',
 };
