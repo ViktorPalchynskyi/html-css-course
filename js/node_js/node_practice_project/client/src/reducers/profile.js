@@ -13,11 +13,13 @@ export default function (state = initialState, action) {
 
    switch (type) {
       case C.GET_PROFILE:
+      case C.UPDATE_PROFILE:
       return{
          ...state, 
          profile: payload,
          loading: false
       };
+
       case C.PROFILE_ERROR:
          return{
             ...state, 
