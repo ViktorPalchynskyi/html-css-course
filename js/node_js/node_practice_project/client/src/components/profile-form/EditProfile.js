@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
@@ -26,7 +26,7 @@ const EditProfile = (
 
    const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
-   useState(()=> { 
+   useEffect(()=> { 
       getCurrentProfile();
 
       setFormDate({
@@ -43,7 +43,7 @@ const EditProfile = (
          youtube: loading || !profile.social ? '' : profile.social.youtube,
          instagram: loading || !profile.social ? '' : profile.social.instagram
       });
-   }, [loading]);
+   }, [loading, getCurrentProfile]);
 
    const {
     company,
