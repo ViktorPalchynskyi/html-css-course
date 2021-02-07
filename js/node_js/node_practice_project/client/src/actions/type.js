@@ -22,4 +22,7 @@ export const constants = {
    UPDATE_PROFILE: 'UPDATE_PROFILE',
 
    ACCOUNT_DELETED: 'ACCOUNT_DELETED',
+
+   GET_POSTS: 'GET_POSTS',
+   POST_ERROR: 'POST_ERROR',
 };

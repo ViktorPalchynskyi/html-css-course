@@ -14,6 +14,11 @@ const Navbar = ({auth:{isAuthenicated, loading}, logout}) => {
             </Link>
          </li>
          <li>
+            <Link to="/posts">
+               Posts
+            </Link>
+         </li>
+         <li>
             <Link to="/register">
                <i className="fas fa-user"></i>{' '}
                <span className="hide-sm">Dashboard</span>
