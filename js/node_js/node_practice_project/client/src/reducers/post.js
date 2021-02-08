@@ -18,6 +18,13 @@ export default function(state=initialState, action) {
             loading: false
          };
 
+      case C.GET_POST:
+         return{
+            ...state,
+            post: payload,
+            loading: false
+         };
+         
       case C.ADD_POST:
          return {
             ...state,
