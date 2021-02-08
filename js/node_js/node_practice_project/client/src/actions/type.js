@@ -27,4 +27,5 @@ export const constants = {
    POST_ERROR: 'POST_ERROR',
 
    UPDATE_LIKES: 'UPDATE_LIKES',
+   DELETE_POST: 'DELETE_POST',
 };
