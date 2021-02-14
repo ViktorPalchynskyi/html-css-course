@@ -57,4 +57,13 @@ const totalNumberOfEye = characters.reduce((acc, cur) => {
    return acc;
 }  ,{});
 
-console.log(totalNumberOfEye);
+
+const vals = [5,3,12,2,9,10,3,10,1];
+
+let acc = 0;
+
+for (let val of vals) {
+    acc += val;
+}
+
+console.log(vals.reduce((acc, cur) => cur > acc ? cur : acc));
