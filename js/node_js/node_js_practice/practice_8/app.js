@@ -1,21 +1,17 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
-app.get('/', (req, res) => { 
+const jsonParser = express.json();
 
-   res.send('<h1>Main page</h1>');
+app.post('/user', jsonParser, (req, res) => { 
+   console.log(req.body);
+   if(!req.body) return res.sendStatus(400);
 
+   res.json(req.body);
 });
 
-app.use('/about', (req, res) => { 
-
-   console.log(req.query);
-   let id = req.query.user.id;
-   let userName = req.query.user.name;
-
-   res.send(`<h1>Info</h1><p>id=${id}</p><p>name=${userName}</p>`);
-
+app.get('/', (req, res) => { 
+   res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(5000, ()=> console.log('Server running...'));
