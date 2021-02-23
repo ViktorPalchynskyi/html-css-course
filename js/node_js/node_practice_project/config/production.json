@@ -1,6 +1,0 @@
-{
-   "mongoURI": "mongodb+srv://viktor:0219@cluster0.dbvyk.mongodb.net/<dbname>?retryWrites=true&w=majority",
-   "jwtSecret": "mysecrettoken01",
-   "githubClientId": "29b13c8c937809b2205e",
-   "githubSecret":"22a76a46d90f0bcbdadc97b510288f9c0aa47d1a"
-}
