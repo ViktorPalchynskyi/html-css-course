@@ -1,57 +1,35 @@
-const http = require('http');
+const express = require('express');
+const dotenv = require('dotenv');
 
-const todos = [
-   {id: 1, text: 'Todo One'},
-   {id: 2, text: 'Todo Two'},
-   {id: 3, text: 'Todo Three'},
-];
-
-const server =  http.createServer((req, res) => { 
-
-   const {method, url} = req;
-
-   let body = [];
-
-   req.on('data', chunk => { 
-      body.push(chunk);
-   }).on('end', () => { 
-      body = Buffer.concat(body).toString();
-
-      let status = 404;
-      const response = { 
-         success: false, 
-         data: null, 
-         error: null
-      };
-
-      if(method === 'GET' && url === '/todos') { 
-         status = 200;
-         response.success = true;
-         response.data = todos;
-      } else if(method === 'POST' && url === '/todos') { 
-         const {id, text} = JSON.parse(body);
-
-         if(!id || !text) { 
-            status = 400;
-            response.error = 'please add id and text';
-         } else { 
-            todos.push({id, text});
-            status = 201;
-            response.success = true;
-            response.data = todos;
-         }
-
-      }
-      
-      res.writeHead(status, { 
-         'Content-Type': 'application/json',
-         'X-Powered-By': 'Node.js'
-      });
-
-      res.end(JSON.stringify(response));
-   });   
+dotenv.config({path: './config/config.env'});
 
 
+
+const app = express();
+
+app.get('/api/v1/bootcamps', (req, res) => { 
+   res.status(200).json({ success: true, msg: 'Show all bootcamps' });
 });
 
-server.listen(5000, () => console.log('Server is working...'));
+app.get('/api/v1/bootcamps/:id', (req, res) => { 
+   res.status(200).json({ success: true, msg: `Show bootcamp ${req.params.id}` });
+});
+
+app.post('/api/v1/bootcamps', (req, res) => { 
+   res.status(200).json({ success: true, msg: 'Create new bootcamps' });
+});
+
+app.put('/api/v1/bootcamps/:id', (req, res) => { 
+   res.status(200).json({ success: true, msg: `Update bootcamp ${req.params.id}` });
+});
+
+app.delete('/api/v1/bootcamps/:id', (req, res) => { 
+   res.status(200).json({ success: true, msg: `Delete bootcamp ${req.params.id}` });
+});
+
+const PORT = process.env.PORT || 3000;
+
+console.log(process.env.NODE_ENV);
+
+
+app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`));
