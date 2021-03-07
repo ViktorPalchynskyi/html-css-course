@@ -5,7 +5,7 @@ const router = express.Router();
 
 router
    .route('/')
-   .get(getBootcamp)
+   .get(getBootcamps)
    .post(createBootcamp);
 
 router
