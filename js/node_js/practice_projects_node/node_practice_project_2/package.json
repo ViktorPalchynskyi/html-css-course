@@ -4,12 +4,13 @@
   "description": "Devcamper backend API",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server",
+    "start": "set NODE_ENV=production && node server",
     "dev": "nodemon server"
   },
   "author": "Viktor Palchynskyi",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jshint": "^2.12.0",
