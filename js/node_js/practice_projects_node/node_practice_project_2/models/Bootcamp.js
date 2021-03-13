@@ -17,7 +17,7 @@ const BootcampSchema = new mongoose.Schema({
    website: { 
       type: String,
       match: [
-         /http?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
+         /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
          'Please use a valid URL with HTTP or HTTPS'
       ]
    },
@@ -32,36 +32,36 @@ const BootcampSchema = new mongoose.Schema({
          'Please add a valid email'
       ]
    }, 
-   adress : { 
+   address : { 
       type: String,
       required: [true, 'Please add an address']
    },
-   location: { 
-      // GeoJSON Point
-      type: { 
-         type: String,
-         enum: ['Point'],
-         required: true
-      },
-      coordinates: { 
-         type: [Number],
-         required: true,
-         index: '2dsphere'
-      },
-      formattedAddress: String, 
-      street: String, 
-      city: String, 
-      state: String, 
-      zipcode: String, 
-      country: String, 
-   },
+   // location: {
+   //    // GeoJSON Point
+   //    type: {
+   //       type: String, 
+   //       enum: ['Point'], 
+   //       required: true
+   //    },
+   //    coordinates: {
+   //       type: [Number],
+   //       required: true, 
+   //       index: '2dsphere'
+   //    },
+   //    formattedAddress: String, 
+   //    street: String, 
+   //    city: String, 
+   //    state: String, 
+   //    zipcode: String, 
+   //    country: String,
+   // },
    careers: { 
       // Array of strings 
       type: [String],
       required: true,
       enum: [
-         'Web Developer',
-         'Mobile Developer',
+         'Web Development',
+         'Mobile Development',
          'UI/UX',
          'Data Science',
          'Business',
