@@ -71,3 +71,45 @@ const css: Styles = {
    marginTop: '2px',
    borderRadius: '5ps'
 }
+
+interface Circl {
+   readonly id: string | number
+   radius: number
+   color?: string
+}
+
+const cirlc1: Circl = {
+   id: 1233,
+   radius: 12,
+   color: 'red',
+}
+
+console.log(cirlc1);
+
+interface CirclWithArea extends Circl {
+   getArea: () => number;
+}
+const cirlc2: CirclWithArea = {
+   id: 1233,
+   radius: 12,
+   color: 'red',
+   getArea(): number {
+      return (2 * Math.PI) * Math.sqrt(this.radius);
+   }
+}
+
+console.log(cirlc2.getArea());
+
+interface ICock {
+   cock: Date
+   getCock(cock: Date): void
+}
+
+class ClockCock implements ICock {
+   cock: Date = new Date();
+   getCock(cock: Date): void {
+      this.cock = cock;
+   }
+}
+
+console.log(new ClockCock().cock);
